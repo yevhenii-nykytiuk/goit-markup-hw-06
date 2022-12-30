@@ -510,19 +510,18 @@
 
             <span class="modal-form-icon-wrapper">
               <input
-              class="modal-form-input"
-              type="tel"
-              name="user_phone"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              title="xxx-xxx-xx-xx"
-              required
-            />
+                class="modal-form-input"
+                type="tel"
+                name="user_phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
 
-            <svg class="modal-form-icon" width="12" height="12">
+              <svg class="modal-form-icon" width="12" height="12">
                 <use href="./images/modal-form-icon/sprite.svg#icon-icon-phone"></use>
               </svg>
             </span>
-            
           </label>
 
           <label class="modal-form-field">
@@ -534,20 +533,16 @@
                 <use href="./images/modal-form-icon/sprite.svg#icon-icon-mail"></use>
               </svg>
             </span>
-            
-
           </label>
 
-          <label for="user_message" class="modal-form-field">
+          <label class="modal-form-field">
             <span class="modal-form-description">Comment</span>
-            <textarea class="modal-form-message" id="user_message" name="user_message" placeholder="Text input">
-            </textarea>
+            <textarea class="modal-form-message" name="user_message" placeholder="Text input"></textarea>
           </label>
 
-          <input class="modal-form-check" id="user_police" type="checkbox" name="user_police" />
-          <label class="modal-form-field" for="user_police"
-            >I accept the terms and conditions of the <a href="#">Privacy Policy</a></label
-          >
+          <input class="modal-form-check hidden-title" id="user_police" type="checkbox" name="user_police" />
+          <label class="modal-form-check-description" for="user_police"
+            >I accept the terms and conditions of the &nbsp;<a class="modal-form-policy-link" href="#">Privacy Policy</a></label>
 
           <button class="modal-form-btn-submit" type="submit">Send</button>
         </form>
