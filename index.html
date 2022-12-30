@@ -471,12 +471,33 @@
             </li>
           </ul>
         </div>
+
+        <form class="form-footer">
+          <p class="form-text-description">Subscribe</p>
+
+          <label>
+            <input
+              class="form-input-email-footer"
+              type="email"
+              name="user-email"
+              placeholder="E-mail"
+              required
+            />
+          </label>
+
+          <span class="form-icon-btn-wrapper">
+            <button class="form-btn-submit-footer" type="submit">Subscribe</button>
+            <svg class="form-icon-telegram" width="24" height="20">
+              <use href="./images/icon-social-footer/sprite-footer.svg#icon-telegram"></use>
+            </svg>
+          </span>
+        </form>
       </div>
     </footer>
 
     <!-- ==================BACKDROP-MODAL===================  -->
 
-    <div class="backdrop-modal" data-modal>
+    <div class="backdrop-modal is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="icon-close-btn" width="24" height="24">
@@ -537,12 +558,26 @@
 
           <label class="modal-form-field">
             <span class="modal-form-description">Comment</span>
-            <textarea class="modal-form-message" name="user_message" placeholder="Text input"></textarea>
+            <textarea
+              class="modal-form-message"
+              name="user_message"
+              placeholder="Text input"
+            ></textarea>
           </label>
 
-          <input class="modal-form-check hidden-title" id="user_police" type="checkbox" name="user_police" />
+          <input
+            class="modal-form-check hidden-title"
+            id="user_police"
+            type="checkbox"
+            name="user_police"
+          />
           <label class="modal-form-check-description" for="user_police"
-            >I accept the terms and conditions of the &nbsp;<a class="modal-form-policy-link" href="#">Privacy Policy</a></label>
+            >I accept the terms and conditions of the &nbsp;<a
+              class="modal-form-policy-link"
+              href="#"
+              >Privacy Policy</a
+            ></label
+          >
 
           <button class="modal-form-btn-submit" type="submit">Send</button>
         </form>
